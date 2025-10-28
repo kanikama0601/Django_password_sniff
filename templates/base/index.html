@@ -1,0 +1,15 @@
+{% load static %}
+
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport"  content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" {% block css %}{% endblock css %}>
+        {% block head_block %}{% endblock head_block %}
+    </head>
+
+    <body>
+        {% block body_block %}{% endblock body_block %}
+    </body>
+</html>

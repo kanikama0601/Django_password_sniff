@@ -1,0 +1,80 @@
+{% extends "base/index.html" %}
+{% load static %}
+
+{% block css %}
+href="{%static 'main/css/style.css'%}"
+{% endblock css %}
+
+
+{% block head_block %}{% endblock head_block %}
+
+
+{% block body_block %}
+<header>
+    <div class="header-container">
+        <a href="/" class="logo">情セキュ</a>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="/">ホーム</a></li>
+                <li><a href="/">お問い合わせ</a></li>
+                <li><a href="/login">ログイン</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<div class="slider-container">
+    <div class="slider">
+        <div class="slide">
+            <img src="{% static "main/img/pic1.jpg" %}" alt="スライド1">
+        </div>
+        <div class="slide">
+            <img src="{% static "main/img/pic2.jpg" %}" alt="スライド2">
+        </div>
+        <div class="slide">
+            <img src="{% static "main/img/pic1.jpg" %}" alt="スライド3">
+        </div>
+        <div class="slide">
+            <img src="{% static "main/img/pic2.jpg" %}" alt="スライド4">
+        </div>
+    </div>
+    <div class="slider-controls">
+        <div class="slider-dot active"></div>
+        <div class="slider-dot"></div>
+        <div class="slider-dot"></div>
+        <div class="slider-dot"></div>
+    </div>
+</div>
+
+<div class="content-container">
+    <section class="content-section">
+        <h2>情報セキュリティ研究会</h2>
+        <p>
+            情報セキュリティ研究会ではセキュリティに関する活動を行っています。
+            ハッキングやウイルス等について学び、それらの対策について学んでいます。
+        </p>
+        <p>
+            主に、大会への出場、講義への参加、情報共有を行っています。
+            私達は最近全然活動できていないので、
+            講義が増えてくるこれからなんとかやっていこうと考えています。
+        </p>
+    </section>
+
+    <section class="content-section">
+        <h2>サービス内容</h2>
+        <p>
+            別のセクションの説明文です。セクション間には適切な余白を設けています。
+            モバイル表示時には余白が自動的に調整されます。
+        </p>
+    </section>
+</div>
+
+<script src={% static "main/js/menu.js" %}></script>
+<script src={% static "main/js/slide.js" %}></script>
+
+{% endblock body_block %}

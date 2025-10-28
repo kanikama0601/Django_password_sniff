@@ -1,0 +1,11 @@
+djangoの起動について
+仮想環境は以下のコードで実行可能です。
+
+source venv/bin/activate.fish
+
+
+サーバーを起動する際は
+
+python manage.py runserver
+
+で起動してください。
